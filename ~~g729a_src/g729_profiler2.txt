@@ -1,0 +1,4 @@
+Areas	Code Size	Count	Incl. Total	Incl. Maximum	Incl. Minimum	Incl. Average	Excl. Total	Excl. Maximum	Excl. Minimum	Excl. Average
+main_check.c, line 71	5	19	43209644	2401611	2399995	2274191	171	9	9	9
+main_check.c, line 73	25	18	250398	13951	13871	13911	2214	123	123	123
+main_check.c, line 69	6	19	1595905	83995	83995	83995	779	41	41	41

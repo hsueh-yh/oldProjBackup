@@ -1,0 +1,29 @@
+
+OBJECTS = JPGApi.o
+
+SRCS = $(OBJECTS:.o=.c)
+DEPENDENCY = JPGApi.h
+
+CC = arm-linux-gcc
+CFLAGS = -g -c -Os -Wall
+INC = -I../Common
+#COMPILER_NEW = y 
+ifdef COMPILER_NEW
+CC = arm-linux-gcc
+else 
+#CC = arm-linux-gcc
+endif
+
+TARGET = app
+
+$(TARGET) : $(OBJECTS)
+		#$(CC) -o $(TARGET) $(OBJECTS)
+
+.c.o :
+		$(CC) $(INC) $(CFLAGS) $<
+
+clean :
+		rm -rf $(OBJECTS) $(TARGET) core
+
+JPGApi.o : $(DEPENDENCY) JPGApi.c
+
